@@ -1,17 +1,16 @@
 import { useState } from "react";
 import "./App.css";
 import MenuList from "./components/MenuList";
+import { Myheader } from "./components/Myheader";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [selectedcateg, setselectedcateg] = useState('all');
 
   return (
     <div className="bg-gray-800 text-white">
-      <header>
-        <h1 className="text-center text-3xl font-bold">Our mune</h1>
-      </header>
+      <Myheader selectedcateg = {selectedcateg} setselectedcateg = {setselectedcateg}/>
       <main className="max-w-300 shadow-2xl p-4 mx-auto">
-        <MenuList />
+        <MenuList  selectedcateg ={selectedcateg}/>
       </main>
     </div>
   );
