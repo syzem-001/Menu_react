@@ -21,3 +21,5 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 Komponensek!: [The San Juan Mountains are beautiful](/public/images/hieharhia.png "San Juan Mountains")
+
+publikált oldal: https://ommenu.netlify.app/
